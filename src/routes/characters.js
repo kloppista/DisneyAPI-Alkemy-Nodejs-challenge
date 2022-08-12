@@ -32,5 +32,9 @@ router
       res.status(404).send();
     }
   });
+router
+  .route("/characters")
+  // to create new characters
+  .delete(function (req, res, next) {});
 
 module.exports = router;
